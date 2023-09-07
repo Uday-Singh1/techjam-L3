@@ -1,7 +1,7 @@
 <?php
   // Start een for loop  die van 33 tot 543 loopt
         for ($i = 33; $i <= 543; $i++) {
-            $output = $i;
+            $output = $i;   //toont de waarde van i
 
             if ($i % 5 == 0 && $i % 9 == 0) {    //dit geeft aan dat je zegt dat als het te delen is door zowel 5 en 9 
                 $output = "Web";    //toont web als het te delen is door 5 en 9
@@ -11,19 +11,17 @@
                 $output = "Developer";   //toon software als het door 9 te delen is     
             }
 
-            echo '<li>';    //toont een li 
+            echo '<li>'; //toont een li 
             if ($i % 2 == 0) {
-                echo '<strong>';    //strong is dikgedrukte lettertype
+                echo '<strong>';  //strong is dikgedrukte lettertype
             }
 
-             // Toon de waarde van $output
-            echo $output;
+            echo $output;  // Toon de waarde van $output
 
             if ($i % 2 == 0) {
-                      // Als $i even is, sluit de sterke tag 
-                echo '</strong>';
+                echo '</strong>';   // Als $i even is, sluit de sterke tag 
             }
-            //de list item word gesloten
-            echo '</li>';
+    
+            echo '</li>'; //de list item word gesloten
         }
      ?>
